@@ -98,10 +98,20 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 // ambientOcclusionTexture.center.x = 0.5
 
 // ambientOcclusionTexture.minFilter = THREE.NearestFilter
+/**
+ * There are 6 possible values for minFilter and magfilter:
 
+THREE.NearestFilter
+THREE.LinearFilter
+THREE.NearestMipmapNearestFilter
+THREE.NearestMipmapLinearFilter
+THREE.LinearMipmapNearestFilter
+THREE.LinearMipmapLinearFilter
+ */
 // when using nearst filter don't need to use mipmaps
 colorTexture.generateMipmaps = false
 // when texture is too big, use nearest filter with mipmaps
+// mipmaps store more pixels in the gpu
 // colorTexture.minFilter = THREE.NearestFilter
 colorTexture.magFilter = THREE.NearestFilter
 
