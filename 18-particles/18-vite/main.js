@@ -53,7 +53,6 @@ const particlesMaterial = new THREE.PointsMaterial({
   // vertexColors: true,
 })
 // particlesMaterial.map = particleTexture
-// particlesMaterial.map = particleTexture
 
 // fix blocking particles
 particlesMaterial.transparent = true
