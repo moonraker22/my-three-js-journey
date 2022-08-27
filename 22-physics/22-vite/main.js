@@ -7,7 +7,6 @@ import CANNON from 'cannon'
 // Pmndrs updated cannon-es
 // import * as CANNON from 'cannon-es'
 
-// console.log(CANNON)
 /**
  * Physics
  */
