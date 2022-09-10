@@ -2,6 +2,10 @@ uniform float uTime;
 
 varying vec2 vUv;
 
+#include "lygia/draw/circle.glsl"
+#include "lygia/draw/hex.glsl"
+
+
 #define PI 3.1415926535897932384626433832795
 
 
@@ -82,6 +86,12 @@ void main()
     // float strength = 1.0 - vUv.y;
     //vertically
     // float strength = mod(vUv.x * 30.0, 1.0);
+
+    // circle with lygia
+    float strength = circle(vUv, 0.5, 0.1);
+    strength += circle(vUv, 0.3, 0.1);
+    strength += hex(vUv, 0.7, 0.1);
+
     //horizontally
     // float strength = mod(vUv.y * 30.0, 1.0);
      //diagonal
