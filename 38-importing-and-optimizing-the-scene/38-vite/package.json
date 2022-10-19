@@ -1,0 +1,20 @@
+{
+  "name": "38-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0",
+    "vite-plugin-glsl": "^0.3.0"
+  },
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "lil-gui": "^0.16.1",
+    "three": "^0.143.0"
+  }
+}
