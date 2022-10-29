@@ -9,6 +9,9 @@ import firefliesVertexShader from './shaders/fireflies/vert.glsl'
 import firefliesFragmentShader from './shaders/fireflies/frag.glsl'
 import portalVertexShader from './shaders/portal/vert.glsl'
 import portalFragmentShader from './shaders/portal/frag.glsl'
+import lightsFragmentShader from './shaders/lights/frag.glsl'
+import lightsVertexShader from './shaders/lights/vert.glsl'
+console.log(lightsFragmentShader)
 
 /**
  * Base
@@ -18,7 +21,7 @@ const debugObject = {}
 const gui = new dat.GUI({
   width: 400,
 })
-
+gui.close()
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
@@ -30,6 +33,7 @@ const scene = new THREE.Scene()
  */
 // Texture loader
 const textureLoader = new THREE.TextureLoader()
+const cubeTextureLoader = new THREE.CubeTextureLoader()
 
 // Draco loader
 const dracoLoader = new DRACOLoader()
@@ -51,6 +55,15 @@ gltfLoader.setDRACOLoader(dracoLoader)
  */
 // Pole light material
 const poleLightMaterial = new THREE.MeshBasicMaterial({ color: 0xffffe5 })
+// const poleLightMaterial = new THREE.ShaderMaterial({
+//   fragmentShader: lightsFragmentShader,
+//   vertexShader: lightsVertexShader,
+//   // uniforms: {
+//   //   uTime: { value: 0 },
+//   //   uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
+//   //   uSize: { value: 150 },
+//   // },
+// })
 
 // Portal light material
 // const portalLightMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff })
@@ -125,6 +138,7 @@ gltfLoader.load('resources/portal.glb', (gltf) => {
   poleLightBMesh.material = poleLightMaterial
   portalLightMesh.material = portalLightMaterial
   bakedMesh.material = bakedMaterial
+  bakedMesh.material.side = THREE.DoubleSide
 
   // console.log(portalLightMesh)
   // console.log(poleLightAMesh)
@@ -196,6 +210,22 @@ const sizes = {
   height: window.innerHeight,
 }
 
+/**
+ * Environment map
+ */
+const environmentMap = cubeTextureLoader.load([
+  'resources/textures/px.png',
+  'resources/textures/nx.png',
+  'resources/textures/py.png',
+  'resources/textures/ny.png',
+  'resources/textures/pz.png',
+  'resources/textures/nz.png',
+])
+environmentMap.encoding = THREE.sRGBEncoding
+
+scene.background = environmentMap
+scene.environment = environmentMap
+
 window.addEventListener('resize', () => {
   // Update sizes
   sizes.width = window.innerWidth
@@ -247,7 +277,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.outputEncoding = THREE.sRGBEncoding
 
 // Clear color
-debugObject.clearColor = '#432749'
+debugObject.clearColor = '#100f10'
 renderer.setClearColor(debugObject.clearColor)
 gui.addColor(debugObject, 'clearColor').onChange(() => {
   renderer.setClearColor(debugObject.clearColor)
