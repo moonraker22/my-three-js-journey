@@ -1,4 +1,8 @@
+varying vec2 vUv;
+
 void main()
 {
-    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    float distanceToCenter = distance(gl_PointCoord, vec2(0.5));
+
+    gl_FragColor = vec4(distanceToCenter, distanceToCenter, distanceToCenter, 1.0);
 }
