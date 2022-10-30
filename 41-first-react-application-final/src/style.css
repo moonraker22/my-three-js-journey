@@ -1,6 +1,17 @@
-.purpleSquare
-{
-    width: 200px;
-    height: 200px;
-    background-color: mediumpurple;
+html,
+body,
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: LightSkyBlue;
+}
+
+.purpleSquare {
+  width: 200px;
+  height: 200px;
+  background-color: mediumpurple;
 }
