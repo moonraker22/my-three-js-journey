@@ -2,7 +2,7 @@
 
 ## 🚧 Under construction 🚧
 
-## A repo for my THREE JS journey from Bruno Simon
+## A repo for my completion of THREE JS Journey from Bruno Simon
 
 ### \* code located in {lesson}-vite folder for each lesson except for R3F lessons
 
