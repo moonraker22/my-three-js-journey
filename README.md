@@ -1,6 +1,10 @@
 # my-three-js-journey
 
+## 🚧 Under construction 🚧
+
 ## A repo for my THREE JS journey from Bruno Simon
+
+### \* code located in {lesson}-vite folder for each lesson except for R3F lessons
 
 <https://threejs-journey.com/>
 
@@ -13,5 +17,3 @@
 ### Text example deployed at [https://three-js-text-eosin.vercel.app/](https://three-js-text-eosin.vercel.app/)
 
 ### Raging Sea example with Simplex 3D Noise noise deployed at [https://raging-sea-rouge.vercel.app/](https://raging-sea-rouge.vercel.app/)
-
-code located in {lesson}-vite folder for each lesson
