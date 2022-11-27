@@ -1,28 +1,23 @@
 import { OrbitControls } from '@react-three/drei'
+import { Physics, Debug } from '@react-three/rapier'
+
 import Lights from './Lights.js'
+import { Level } from './Level.js'
+import Player from './Player.js'
 
-export default function Experience()
-{
-    return <>
+export const blockCount = 10
 
-        <OrbitControls makeDefault />
+export default function Experience() {
+  return (
+    <>
+      {/* <OrbitControls makeDefault /> */}
 
+      <Physics>
+        {/* <Debug /> */}
         <Lights />
-
-        <mesh castShadow position-x={ - 2 }>
-            <sphereGeometry />
-            <meshStandardMaterial color="orange" />
-        </mesh>
-
-        <mesh castShadow position-x={ 2 } scale={ 1.5 }>
-            <boxGeometry />
-            <meshStandardMaterial color="mediumpurple" />
-        </mesh>
-
-        <mesh receiveShadow position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
-            <planeGeometry />
-            <meshStandardMaterial color="greenyellow" />
-        </mesh>
-
+        <Level count={blockCount} />
+        <Player />
+      </Physics>
     </>
+  )
 }
