@@ -3,8 +3,9 @@ import { useFrame } from '@react-three/fiber'
 import { RigidBody, useRapier } from '@react-three/rapier'
 import { useKeyboardControls } from '@react-three/drei'
 import * as THREE from 'three'
+import useGame from './stores/useGame.js'
 
-import { blockCount } from './Experience'
+// import { blockCount } from './Experience'
 
 export default function Player() {
   const [subscribeKeys, getKeys] = useKeyboardControls()
@@ -15,8 +16,13 @@ export default function Player() {
 
   const rapierWorld = world.raw()
 
-  const [smoothedCameraPosition] = useState(() => new THREE.Vector3())
+  const [smoothedCameraPosition] = useState(() => new THREE.Vector3(50, 50, 50))
   const [smoothedCameraTarget] = useState(() => new THREE.Vector3())
+
+  const start = useGame((state) => state.start)
+  const end = useGame((state) => state.end)
+  const blocksCount = useGame((state) => state.blocksCount)
+  useGame((state) => console.log(state))
 
   // Function to jump
   const jump = () => {
@@ -41,8 +47,13 @@ export default function Player() {
         if (value) jump()
       }
     )
+    const unsubscribeAny = subscribeKeys(() => {
+      console.log('any key down')
+      start()
+    })
     return () => {
       unsubscribeJump()
+      unsubscribeAny()
     }
   }, [subscribeKeys, jump])
 
@@ -84,9 +95,13 @@ export default function Player() {
     const bodyPosition = body.current.translation()
 
     //Cross finish line
-    if (bodyPosition.z < -(blockCount * 4 + 2)) {
-      console.log('You Win!!!!!!!')
-    }
+    // if (bodyPosition.z < -(blockCount * 4 + 2)) {
+    //   console.log('You Win!!!!!!!')
+    // }
+    /**
+     * Phases
+     */
+    if (bodyPosition.z < -(blocksCount * 4 + 2)) console.log('the end')
 
     //Camera position
     const cameraPosition = new THREE.Vector3()
