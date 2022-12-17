@@ -21,6 +21,7 @@ export default function Player() {
 
   const start = useGame((state) => state.start)
   const end = useGame((state) => state.end)
+  const restart = useGame((state) => state.restart)
   const blocksCount = useGame((state) => state.blocksCount)
   useGame((state) => console.log(state))
 
@@ -40,7 +41,24 @@ export default function Player() {
     }
   }
 
+  // Function to reset
+  const reset = () => {
+    console.log('reset')
+    body.current.setTranslation({ x: 0, y: 1, z: 0 })
+    body.current.setLinvel({ x: 0, y: 0, z: 0 })
+    body.current.setAngvel({ x: 0, y: 0, z: 0 })
+    // body.current.setRotation({ x: 0, y: 0, z: 0, w: 1 })
+  }
+
   useEffect(() => {
+    const unsubscribeReset = useGame.subscribe(
+      (state) => state.phase,
+      (value) => {
+        console.log('phase changes to', value)
+        if (value === 'ready') reset()
+      }
+    )
+
     const unsubscribeJump = subscribeKeys(
       (state) => state.jump,
       (value) => {
@@ -48,14 +66,16 @@ export default function Player() {
       }
     )
     const unsubscribeAny = subscribeKeys(() => {
-      console.log('any key down')
+      // console.log('any key down')
       start()
     })
+
     return () => {
+      unsubscribeReset()
       unsubscribeJump()
       unsubscribeAny()
     }
-  }, [subscribeKeys, jump])
+  }, [subscribeKeys, jump, reset])
 
   useFrame((state, delta) => {
     // const myState = state.get()
@@ -98,11 +118,19 @@ export default function Player() {
     // if (bodyPosition.z < -(blockCount * 4 + 2)) {
     //   console.log('You Win!!!!!!!')
     // }
-    /**
-     * Phases
-     */
-    if (bodyPosition.z < -(blocksCount * 4 + 2)) console.log('the end')
 
+    /**
+     * Phases of the game
+     */
+    if (bodyPosition.z < -(blocksCount * 4 + 2)) {
+      // console.log('🎉🎉 You Win!!! 🎉🎉')
+      end()
+    }
+
+    if (bodyPosition.y < -4) {
+      // console.log('AAAAHHHH!!!')
+      restart()
+    }
     //Camera position
     const cameraPosition = new THREE.Vector3()
     const cameraTarget = new THREE.Vector3()
@@ -125,6 +153,7 @@ export default function Player() {
     state.camera.position.copy(smoothedCameraPosition)
     state.camera.lookAt(smoothedCameraTarget)
   })
+
   return (
     <>
       <RigidBody
