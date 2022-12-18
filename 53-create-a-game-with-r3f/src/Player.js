@@ -23,7 +23,7 @@ export default function Player() {
   const end = useGame((state) => state.end)
   const restart = useGame((state) => state.restart)
   const blocksCount = useGame((state) => state.blocksCount)
-  useGame((state) => console.log(state))
+  // useGame((state) => console.log(state))
 
   // Function to jump
   const jump = () => {
@@ -43,7 +43,7 @@ export default function Player() {
 
   // Function to reset
   const reset = () => {
-    console.log('reset')
+    // console.log('reset')
     body.current.setTranslation({ x: 0, y: 1, z: 0 })
     body.current.setLinvel({ x: 0, y: 0, z: 0 })
     body.current.setAngvel({ x: 0, y: 0, z: 0 })
@@ -54,7 +54,7 @@ export default function Player() {
     const unsubscribeReset = useGame.subscribe(
       (state) => state.phase,
       (value) => {
-        console.log('phase changes to', value)
+        // console.log('phase changes to', value)
         if (value === 'ready') reset()
       }
     )
