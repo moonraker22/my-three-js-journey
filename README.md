@@ -10,6 +10,10 @@
 
 🦊🦊🦊
 
+### Marble Madness Game deployed at [https://marble-madness.vercel.app](https://marble-madness.vercel.app)
+
+![Marble Madness](https://github.com/moonraker22/my-three-js-journey/raw/main/53-create-a-game-with-r3f/public/Marble_Maddness.jpg)
+
 ### Portal Scene with procedural materials deployed at [https://portal-omega-ten.vercel.app](https://portal-omega-ten.vercel.app)
 
 ![Portal Scene](https://github.com/moonraker22/my-three-js-journey/blob/main/38-importing-and-optimizing-the-scene/38-vite/public/resources/portal_readme.jpg?raw=true)
@@ -23,3 +27,5 @@
 - codrops github - [https://github.com/akella?tab=repositories](https://github.com/akella?tab=repositories)
 - codrops website - [https://tympanus.net/codrops/](https://tympanus.net/codrops/)
 - brunosimon.com - [https://www.brunosimon.com/](https://www.brunosimon.com/)
+- react three fiber examples - [https://docs.pmnd.rs/react-three-fiber/getting-started/examples](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
+- three js examples - [https://threejs.org/examples/](https://threejs.org/examples/)
