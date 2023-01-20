@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { CuboidCollider, RigidBody } from '@react-three/rapier'
 import { useFrame } from '@react-three/fiber'
 import { Float, Text, useGLTF } from '@react-three/drei'
+import useGame from './stores/useGame.js'
 
 THREE.ColorManagement.legacyMode = false
 
@@ -191,8 +192,31 @@ export function BlockAxe({ position = [0, 0, 0] }) {
 export function BlockEnd({ position = [0, 0, 0] }) {
   const hamburger = useGLTF('./hamburger.glb')
 
+  const phase = useGame((state) => state.phase)
+  console.log('🚀 ~ file: Level.js:196 ~ BlockEnd ~ phase', phase)
+
   hamburger.scene.children.forEach((mesh) => {
     mesh.castShadow = true
+  })
+
+  useFrame((state) => {
+    const time = state.clock.getElapsedTime()
+
+    const rotation = new THREE.Quaternion()
+    rotation.setFromEuler(new THREE.Euler(0, time * 0.5, 0))
+    hamburger.scene.quaternion.copy(rotation)
+
+    if (phase === 'ended') {
+      hamburger.scene.position.y = Math.sin(time * 2) * 0.5 + 1.5
+    }
+
+    if (phase === 'playing') {
+      hamburger.scene.position.y = 0
+    }
+
+    if (phase === 'ready') {
+      hamburger.scene.position.y = 0
+    }
   })
   return (
     <group position={position}>
