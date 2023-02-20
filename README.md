@@ -23,7 +23,7 @@
 ### Raging Sea example with Simplex 3D Noise noise deployed at [https://raging-sea-rouge.vercel.app/](https://raging-sea-rouge.vercel.app/)
 
 - cool post about R3F and particles - [https://varun.ca/three-js-particles/](https://varun.ca/three-js-particles/)
-- cool blog about creating shader backgrounds in react three fiber - [https://adamkarlsten.com/blog/creating-shader-backgrounds/]
+- cool blog about creating shader backgrounds in react three fiber - [https://adamkarlsten.com/blog/creating-shader-backgrounds/](https://adamkarlsten.com/blog/creating-shader-backgrounds/)
 - codrops gists - [https://gist.github.com/akella](https://gist.github.com/akella)
 - codrops github - [https://github.com/akella?tab=repositories](https://github.com/akella?tab=repositories)
 - codrops website - [https://tympanus.net/codrops/](https://tympanus.net/codrops/)
