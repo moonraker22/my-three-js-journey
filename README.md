@@ -30,3 +30,4 @@
 - brunosimon.com - [https://www.brunosimon.com/](https://www.brunosimon.com/)
 - react three fiber examples - [https://docs.pmnd.rs/react-three-fiber/getting-started/examples](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - three js examples - [https://threejs.org/examples/](https://threejs.org/examples/)
+- awesome list of creative coding examples and resources - [https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl](https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl)
