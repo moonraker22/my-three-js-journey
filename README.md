@@ -26,6 +26,8 @@
 
 ### Raging Sea example with Simplex 3D Noise noise deployed at [https://raging-sea-rouge.vercel.app/](https://raging-sea-rouge.vercel.app/)
 
+## Links and Learning
+
 - cool post about R3F and particles - [https://varun.ca/three-js-particles/](https://varun.ca/three-js-particles/)
 - cool blog about creating shader backgrounds in react three fiber - [https://adamkarlsten.com/blog/creating-shader-backgrounds/](https://adamkarlsten.com/blog/creating-shader-backgrounds/)
 - akella gists - [https://gist.github.com/akella](https://gist.github.com/akella)
@@ -36,5 +38,6 @@
 - three js examples - [https://threejs.org/examples/](https://threejs.org/examples/)
 - awesome list of creative coding examples and resources - [https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl](https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl)
 - cool repo about shaders [https://github.com/lettier/3d-game-shaders-for-beginners](https://github.com/lettier/3d-game-shaders-for-beginners)
+- Math is fun website has great material on geometry and shaping functions [https://www.mathsisfun.com/geometry/index.html](https://www.mathsisfun.com/geometry/index.html)
 - cool library from Patricio Gonzalez Vivo [https://github.com/patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia)
 - awesome open source book about three js [https://discoverthreejs.com/book/](https://discoverthreejs.com/book/)
