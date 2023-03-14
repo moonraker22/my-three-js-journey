@@ -18,6 +18,10 @@
 
 ![Portal Scene](https://github.com/moonraker22/my-three-js-journey/blob/main/38-importing-and-optimizing-the-scene/38-vite/public/resources/portal_readme.jpg?raw=true)
 
+### Scene I made with scroll controls at [https://kjvb7w.csb.app/](https://kjvb7w.csb.app/)
+
+![Cans and Bottles](https://github.com/moonraker22/my-three-js-journey/blob/main/38-importing-and-optimizing-the-scene/38-vite/public/cans-scroll-960.png?raw=true)
+
 ### Text example deployed at [https://three-js-text-eosin.vercel.app/](https://three-js-text-eosin.vercel.app/)
 
 ### Raging Sea example with Simplex 3D Noise noise deployed at [https://raging-sea-rouge.vercel.app/](https://raging-sea-rouge.vercel.app/)
