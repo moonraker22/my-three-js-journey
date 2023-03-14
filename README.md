@@ -37,3 +37,4 @@
 - awesome list of creative coding examples and resources - [https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl](https://github.com/terkelg/awesome-creative-coding#shaders--opengl--webgl)
 - cool repo about shaders [https://github.com/lettier/3d-game-shaders-for-beginners](https://github.com/lettier/3d-game-shaders-for-beginners)
 - cool library from Patricio Gonzalez Vivo [https://github.com/patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia)
+- awesome open source book about three js [https://discoverthreejs.com/book/](https://discoverthreejs.com/book/)
