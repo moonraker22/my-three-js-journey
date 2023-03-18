@@ -18,7 +18,7 @@
 
 ![Portal Scene](https://github.com/moonraker22/my-three-js-journey/blob/main/38-importing-and-optimizing-the-scene/38-vite/public/resources/portal_readme.jpg?raw=true)
 
-### Moon and Stars at [https://chuupz.csb.app/](https://chuupz.csb.app/)
+### Moon and Stars at [https://jzz8p7.csb.app/](https://jzz8p7.csb.app/)
 
 ![Moon and Stars](https://github.com/moonraker22/my-three-js-journey/raw/main/53-create-a-game-with-r3f/public/moon-stars-960.png?raw=true)
 
