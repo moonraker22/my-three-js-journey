@@ -45,3 +45,4 @@
 - Math is fun website has great material on geometry and shaping functions [https://www.mathsisfun.com/geometry/index.html](https://www.mathsisfun.com/geometry/index.html)
 - cool library from Patricio Gonzalez Vivo [https://github.com/patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia)
 - awesome open source book about three js [https://discoverthreejs.com/book/](https://discoverthreejs.com/book/)
+- blog of Youpi [https://barradeau.com/blog/?page_id=6](https://barradeau.com/blog/?page_id=6)
