@@ -48,3 +48,4 @@
 - blog of Youpi [https://barradeau.com/blog/?page_id=6](https://barradeau.com/blog/?page_id=6)
 - awesome tuts from spite [https://www.clicktorelease.com/](https://www.clicktorelease.com/)
 - cool website of experiments from Mathis Biabiany [https://mathis-biabiany.fr](https://mathis-biabiany.fr)
+- lots of info on real time rendering and shaders from SIGGRAPH - [https://blog.selfshadow.com/publications/](https://blog.selfshadow.com/publications/)
