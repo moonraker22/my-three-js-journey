@@ -51,3 +51,5 @@
 - lots of info on real time rendering and shaders from SIGGRAPH - [https://blog.selfshadow.com/publications/](https://blog.selfshadow.com/publications/)
 - Inigo Quilez website king of sdf's [https://iquilezles.org/](https://iquilezles.org/)
 - MateriaX library free materials from AMD - [https://matlib.gpuopen.com/main/materials/collections](https://matlib.gpuopen.com/main/materials/collections)
+- Tutorial on using Three Js Nodes system which is yet undocumented - [https://www.donmccurdy.com/2019/03/17/three-nodematerial-introduction/](https://www.donmccurdy.com/2019/03/17/three-nodematerial-introduction/)
+- PR for new docs for Nodes in THREE js - [https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material](https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material)
