@@ -54,3 +54,4 @@
 - Tutorial on using Three Js Nodes system which is yet undocumented - [https://www.donmccurdy.com/2019/03/17/three-nodematerial-introduction/](https://www.donmccurdy.com/2019/03/17/three-nodematerial-introduction/)
 - PR for new docs for Nodes in THREE js - [https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material](https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material)
 - CYOS system from Babylon JS - [https://cyos.babylonjs.com/](https://cyos.babylonjs.com/)
+- Collection of intermediate tuts from Josh Marinacci - [https://blog.mozvr.com/threejs-intermediate-skill-tutorials/](https://blog.mozvr.com/threejs-intermediate-skill-tutorials/)
