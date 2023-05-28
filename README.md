@@ -55,3 +55,4 @@
 - PR for new docs for Nodes in THREE js - [https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material](https://raw.githack.com/sunag/three.js/dev-nodes-doc/docs/index.html#manual/en/introduction/How-to-use-node-material)
 - CYOS system from Babylon JS - [https://cyos.babylonjs.com/](https://cyos.babylonjs.com/)
 - Collection of intermediate tuts from Josh Marinacci - [https://blog.mozvr.com/threejs-intermediate-skill-tutorials/](https://blog.mozvr.com/threejs-intermediate-skill-tutorials/)
+- Free book pdf from Duke University - [https://services.math.duke.edu/courses/math_everywhere/assets/techRefs/Threejs%20Essentials.pdf](https://services.math.duke.edu/courses/math_everywhere/assets/techRefs/Threejs%20Essentials.pdf)
