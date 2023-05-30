@@ -57,3 +57,4 @@
 - Collection of intermediate tuts from Josh Marinacci - [https://blog.mozvr.com/threejs-intermediate-skill-tutorials/](https://blog.mozvr.com/threejs-intermediate-skill-tutorials/)
 - Free book pdf from Duke University - [https://services.math.duke.edu/courses/math_everywhere/assets/techRefs/Threejs%20Essentials.pdf](https://services.math.duke.edu/courses/math_everywhere/assets/techRefs/Threejs%20Essentials.pdf)
 - A set of awesome examples with code from Lee Stemkoski - [https://stemkoski.github.io/Three.js/](https://stemkoski.github.io/Three.js/)
+- Shader Expo app with examples - [https://anuraghazra.dev/ShaderExpo/](https://anuraghazra.dev/ShaderExpo/)
