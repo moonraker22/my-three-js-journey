@@ -2,7 +2,7 @@
 
 ## 🚧 Under construction 🚧
 
-## A repo for my completion of THREE JS Journey from Bruno Simon and learning WebGl and shaders recources🍔
+## A repo for my completion of THREE JS Journey from Bruno Simon and learning WebGL and shaders 🍔
 
 ### \* I used vite insted of webpack for Three JS lessons so finished code located in {lesson}-vite folder for each lesson except for R3F lessons
 
