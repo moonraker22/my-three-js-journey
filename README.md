@@ -59,3 +59,4 @@
 - A set of awesome examples with code from Lee Stemkoski - [https://stemkoski.github.io/Three.js/](https://stemkoski.github.io/Three.js/)
 - Shader Expo app with examples - [https://anuraghazra.dev/ShaderExpo/](https://anuraghazra.dev/ShaderExpo/)
 - Cool post about creating different particle effects - [https://varun.ca/three-js-particles/](https://varun.ca/three-js-particles/)
+- Excellent post about using noise and creating flow fields - [https://varun.ca/noise/](https://varun.ca/noise/)
