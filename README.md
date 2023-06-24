@@ -4,6 +4,8 @@
 
 ## A repo for my completion of THREE JS Journey from Bruno Simon and learning WebGL and shaders 🍔
 
+![My Certificate](certificate.png)
+
 ### \* I used vite insted of webpack for Three JS lessons so finished code located in {lesson}-vite folder for each lesson except for R3F lessons
 
 <https://threejs-journey.com/>
